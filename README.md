@@ -1,4 +1,4 @@
-# get percentage values of the objects in an image
+# Get percentage values of the objects in an image
 This code uses MIT CSAIL Computer Vision's image segmentation algorithm to extract percentage values of 150 objects in an image.
 
 The original segmentation algorithm is trained on ADE20K dataset and it can mask 150 different objects accurately. However, I needed the percentages of those 150 objects in a tabular format. Hence I changed the code accordingly. The original segmentation algorithm individually identifies each pixel and applies a masking layer accordingly. So all I had to do was to create a function that will count the number of pixels of every object, count the total number of pixels in the image and yield the percentage value of each objects. Rest of the notebook represents that data in a tabular way. Also, for my project I needed 4 images of same grid be averaged, second dataframe df is created for that purpose.
